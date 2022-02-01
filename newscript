@@ -1,0 +1,23 @@
+#!/bin/bash
+echo -e "Identify yourself! --> \c"
+read USERNAME
+echo -e "Hello $USERNAME\r"
+
+echo -e "How old are you? --> \c"
+read AGE
+echo "You are $AGE years old."
+
+if [ AGE > 15 ]
+then 
+echo -e "Damn, I thought the Cliffs of Dover were old!\c"
+echo -e "\r"
+fi
+
+echo -e "Call the program a classless philistine? (y/n) --> \c"
+read RETORT
+
+if [ $RETORT = "y" -o $RETORT = "Y" ]
+then
+echo -e "Joke's on you, I haven't even been programmed to know what that means...\c"
+echo -e "\r"
+fi

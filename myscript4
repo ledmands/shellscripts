@@ -1,0 +1,13 @@
+#!/bin/bash
+echo "These are the scripts that you have previously created:"
+ls -l myscript myscript2 myscript3
+sleep 2
+echo "This script will now change the permissions on each sript such that the root user has exclusive rights only."
+sleep 3
+for file in myscript myscript2 myscript3
+do
+chmod 700 $file
+done
+
+echo "The new permissions are listed below:"
+ls -l myscript myscript2 myscript3
